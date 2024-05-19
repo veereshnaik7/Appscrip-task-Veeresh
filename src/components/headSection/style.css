@@ -1,0 +1,39 @@
+.headSection-outer {
+    padding: 20px;
+    text-align: center;
+}
+
+.headSection-outer h1 {
+    font-size: 36px; 
+    line-height: 48px; 
+    margin: 10px 0; 
+}
+
+.headSection-outer p {
+    font-size: 16px; 
+    line-height: 24px; 
+    padding: 0 10px;
+    margin:  -5px 0px 0px 5px;
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    .heroSection-outer {
+        padding: 40px;
+    }
+
+    .headSection-outer h1 {
+        font-size: 48px;
+        line-height: 60px; 
+        margin: 20px 0; 
+        font-weight: 300;
+    }
+
+    .headSection-outer p {
+        font-size: 18px;
+        line-height: 30px; 
+        padding: 0 100px; 
+        margin: 20px 0; 
+    }
+}
