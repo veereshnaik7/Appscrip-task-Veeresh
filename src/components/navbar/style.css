@@ -1,7 +1,8 @@
 header {
   width: 100%;
   padding-bottom: 1%;
-  position: fixed;
+  position: absolute;
+  z-index: 2;
   box-shadow: 0px 5px 5px white;
 }
 #outer {
@@ -81,8 +82,10 @@ nav ul li {
     display: block;
     margin-right: 0.2rem;
     position: fixed;
-    top: 13vh;
+    top: 12vh;
     left: 0.5rem;
+
+    position: absolute;
   }
   .menu-logo {
     display: flex;
@@ -102,11 +105,12 @@ nav ul li {
     left: -100%;
     color: whitesmoke;
     transition: 0.5s ease;
-    z-index: 2;
+    z-index: 34;
   }
   nav ul li {
+    font-size: 14px;
     display: block;
-    padding: 3% 0rem;
+    padding: 1.5% 0rem;
     text-align: center;
     
   }

@@ -1,6 +1,6 @@
 .outerDiv {
   position: relative;
-  top: 15vh;
+  top: 20vh;
   margin: 0;
   padding: 0 100px;
 }
@@ -8,9 +8,10 @@
 .header-section {
   display: flex;
   align-items: center;
+  
   justify-content: space-between;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .header-inner-div {
@@ -200,7 +201,7 @@
 @media (min-width: 320px) and (max-width: 426px) {
   .outerDiv {
     position: relative;
-    top: 15vh;
+    top: 20vh;
     margin: 0;
     padding: 0 0;
   }
@@ -210,10 +211,7 @@
   }
   #veeresh{
     margin:0 0.5rem;
-    /* background-color: red; */
-    
 
-    
   }
   
 }

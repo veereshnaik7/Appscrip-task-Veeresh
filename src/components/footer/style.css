@@ -1,6 +1,8 @@
 .footerMain {
   color: #fff;
   background: #000;
+  position: relative;
+  top: 25vh;
 }
 .footer {
   padding: 27px 90px;
@@ -14,12 +16,14 @@
 }
 .topFooter {
   border-bottom: #fff 1px solid;
+  
 }
 .topFooter h1,
 .bottomFooter h1 {
   cursor: default;
   margin: 0%;
   font-size: 19px;
+  cursor: pointer;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -27,6 +31,8 @@
   display: flex;
   align-items: center;
   column-gap: 12px;
+  color: #fff;
+  cursor: pointer;
 }
 .topFooter p,
 .bottomFooter p {
@@ -37,6 +43,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .socialMedia {
+  cursor: pointer;
   display: flex;
   align-items: center;
   column-gap: 10px;
@@ -58,9 +65,11 @@
   font-size: 15px;
   font-weight: lighter;
   letter-spacing: 1px;
+  color: #fff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .topFooter-left input {
+
   height: 34px;
   width: 50%;
   border: none;
@@ -69,6 +78,7 @@
   padding: 0px 15px;
 }
 .topFooter-left button {
+  color: #fff;
   cursor: pointer;
   height: 36px;
   margin-left: 2px;
@@ -80,6 +90,7 @@
 }
 .topFooter-left,
 .topFooter-right {
+  color: #fff;
   row-gap: 20px;
   display: flex;
   flex-direction: column;
@@ -90,8 +101,10 @@
 }
 .contactData {
   display: flex;
+  color: #fff;
   flex-direction: column;
   row-gap: 16px;
+  cursor: pointer;
 }
 .topFooter-right .details {
   background: #000;
@@ -181,6 +194,7 @@
   .contactData {
     display: flex;
     column-gap: 18px;
+    cursor: pointer;
   }
   .currencyNotes {
     display: none;
@@ -195,6 +209,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    cursor: pointer;
   }
   .downArrow {
     display: block;
@@ -206,6 +221,7 @@
     border-bottom: 1px white solid;
     width: 100%;
     padding: 19px 0px;
+    
   }
   .bottomFooter-firstOne ul,
   .bottomFooter-secondOne ul {
