@@ -4,7 +4,7 @@ import './Style.css';
 const Slide = () => {
     return (
         <div className="outerLayer">
-            <div className="slide side">
+            {/* <div className="slide side">
                 <div className="icon">
                     <svg
                         width="16"
@@ -114,7 +114,7 @@ const Slide = () => {
                     </svg>
                 </div>
                 Lorem ipsum dolor
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -128,7 +128,7 @@ const ProductsSection = () => {
               <ul>
                 {Recommended.map((link, index) => (
                   <li
-                    style={{ fontWeight: index === 0 ? "bold" : "normal" }}
+                    style={{ fontWeight: index === 0 ? "bold" : "normal",margin:"0.5rem" }}
                     key={index}
                   >
                     {link.title}
@@ -156,11 +156,12 @@ const ProductsSection = () => {
           )}
         </div>
         <div
+        id="veeresh"
           className={`right-section ${showFilter ? "show-filter" : ""}`}
           style={{ width: showFilter ? "80%" : "100%" }}
         >
           {products ? (
-            <div style={productSectionStyle}>
+            <div style={productSectionStyle} >
               {products?.map((prd, index) => (
                 <ProductCard key={index} product={prd} />
               ))}

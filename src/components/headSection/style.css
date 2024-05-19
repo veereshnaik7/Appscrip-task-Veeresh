@@ -1,12 +1,17 @@
 .headSection-outer {
     padding: 20px;
     text-align: center;
+    position: relative;
+    top: 20vh;
+    z-index: -1;
 }
 
 .headSection-outer h1 {
-    font-size: 36px; 
-    line-height: 48px; 
-    margin: 10px 0; 
+    font-size: 60px; 
+    line-height: 72px; 
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "Simplon Norm"
 }
 
 .headSection-outer p {
@@ -37,3 +42,14 @@
         margin: 20px 0; 
     }
 }
+
+
+@media (min-width: 320px) and (max-width: 426px) {
+    .headSection-outer h1 {
+        font-size: 24px; 
+        line-height: 28.8px; 
+        text-align: center; 
+        font-family: "Simplon Norm"
+    }
+      
+    }
