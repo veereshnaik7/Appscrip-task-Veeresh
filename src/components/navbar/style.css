@@ -58,6 +58,7 @@ nav ul li {
 }
 nav ul li:hover{
   text-decoration: underline 1px solid;
+  transition: 0.2s ease;
 }
 
 #check {
