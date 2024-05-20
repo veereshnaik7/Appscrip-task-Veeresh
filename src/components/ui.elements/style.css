@@ -61,7 +61,7 @@ h4 {
 }
 
 .productCard {
-  width: 220px;
+  width: 260px;
   overflow: hidden;
   box-shadow: 1px 1px 5px #e5e5e5, -1px -1px 5px #e5e5e5;
   border-radius: 5px;
@@ -77,8 +77,8 @@ h4 {
 }
 .productImage img {
   margin-top: 1rem;
-  width: 160px;
-  height: 180px;
+  width: 190px;
+  height: 220px;
   object-fit: contain;
 }
 

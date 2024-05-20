@@ -310,3 +310,15 @@
     display: none;
   }
 }
+
+
+@media screen and (min-width:320px) and (max-width:426px){
+  #paycards{
+    width: 100%;
+    display: flex;
+  }
+  #paycards Image{
+    width: 10px;
+  }
+  
+}

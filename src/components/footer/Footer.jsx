@@ -1,5 +1,5 @@
 import Image from "next/image";
-import './style.css';
+import "./style.css";
 import { png, footerNavMeta, footerNavQuick } from "@/constants/constants";
 const Footer = () => {
   return (
@@ -105,13 +105,12 @@ const Footer = () => {
               <h1>mettā muse Accepts</h1>
 
               <div>
-                {" "}
-                <Image src={png?.pay1} alt="pay1" />{" "}
-                <Image src={png?.pay2} alt="pay2" />{" "}
-                <Image alt="pay3" src={png?.pay3} />{" "}
-                <Image alt="pay4" src={png?.pay4} />{" "}
-                <Image src={png?.pay5} alt="pay5" />{" "}
-                <Image src={png?.pay6} alt="pay6" />{" "}
+                <Image src={png?.pay1} alt="pay1" />
+                <Image src={png?.pay2} alt="pay2" />
+                <Image alt="pay3" src={png?.pay3} />
+                <Image alt="pay4" src={png?.pay4} />
+                <Image src={png?.pay5} alt="pay5" />
+                <Image src={png?.pay6} alt="pay6" />
               </div>
             </div>
           </div>
