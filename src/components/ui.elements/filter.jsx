@@ -10,7 +10,7 @@ const Filter = ({ filter }) => {
         onClick={() => setOpenSemi((prev) => !prev)}
         className="accordionHeaderSection"
       >
-        <h3>{filter?.title}</h3>
+        <p style={{color:"#252020",fontSize:"14px"}}>{filter?.title}</p>
         <h3>
           {openSemi ? (
             <svg

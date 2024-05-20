@@ -3,7 +3,7 @@ header {
   padding-bottom: 1%;
   position: absolute;
   z-index: 2;
-  box-shadow: 0px 1px 1px white;
+  box-shadow: 0px 0.5px 0.5px rgb(47, 41, 41);
 }
 #outer {
   background-color: black;
@@ -25,10 +25,13 @@ header {
   justify-content: space-around;
   
 }
+
 #icons {
   display: flex;
   align-items: center;
+  
 }
+
 
 header h1 {
   margin-left: 5%;
@@ -46,6 +49,7 @@ nav ul {
 nav ul li {
   margin-right: 3%;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #check {
@@ -110,8 +114,9 @@ nav ul li {
   nav ul li {
     font-size: 14px;
     display: block;
-    padding: 1.5% 0rem;
+    padding: 0.6rem 0rem;
     text-align: center;
+    
     
   }
 
