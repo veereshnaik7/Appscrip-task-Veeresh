@@ -64,7 +64,9 @@ nav ul li:hover{
 #check {
   display: none;
 }
-
+#logo{
+  font-family: "Inter","sans-serif";
+}
 
 @media (min-width: 320px) and (max-width: 426px) {
   #outer {

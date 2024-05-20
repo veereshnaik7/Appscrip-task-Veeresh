@@ -128,7 +128,7 @@ const Navbar = () => {
             </svg>
           </div>
 
-          <h1>LOGO</h1>
+          <h1 id="logo">LOGO</h1>
           <div id="icons">
             <svg
               className="icon"
