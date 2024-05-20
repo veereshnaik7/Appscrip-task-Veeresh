@@ -27,7 +27,7 @@
 
 @media (min-width: 320px) and (max-width: 426px) {
   .headSection-outer{
-    top: 15vh;
+    top: 12vh;
   }
   #homeShop {
     display: block;

@@ -1,6 +1,6 @@
 .outerDiv {
   position: relative;
-  top: 28vh;
+  top: 20vh;
   margin: 0;
   padding: 0 5%;
 }
@@ -236,7 +236,7 @@
 @media (min-width: 320px) and (max-width: 426px) {
   .outerDiv {
     position: relative;
-    top: 22vh;
+    top: 15vh;
     margin: 0;
     padding: 0 0;
   }
