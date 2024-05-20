@@ -94,10 +94,9 @@ nav ul li:hover{
   .menu {
     display: block;
     margin-right: 0.2rem;
-    position: relative;
-    bottom: 31px;
-    left: 0.5rem;
-
+    position: absolute;
+    bottom: 15px;
+    left: 8px;
   }
   .menu-logo {
     display: flex;
