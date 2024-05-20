@@ -56,6 +56,9 @@ nav ul li {
   line-height: 24px;
   letter-spacing: 1px;
 }
+nav ul li:hover{
+  text-decoration: underline 1px solid;
+}
 
 #check {
   display: none;
