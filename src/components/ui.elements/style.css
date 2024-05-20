@@ -99,6 +99,9 @@ h4 {
   font-family: "Simplon Norm";
   line-height: 21.6px;
   margin-left: 5px;
+  text-decoration: none;
+  color:  #252020;
+
 }
 #productTitle::-webkit-scrollbar {
   display: none;
@@ -112,6 +115,9 @@ h4 {
   line-height: 16.8px;
   margin-left: 5px;
   margin-bottom: 1rem;
+  text-decoration: none;
+  color:  #252020;
+  opacity: 0.8;
 }
 .heart-icon {
   position: relative;

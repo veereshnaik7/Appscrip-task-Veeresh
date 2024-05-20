@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Slide from "@/components/navbar/slide";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 
@@ -16,7 +15,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                
-                <Slide/>
+                
                 <Navbar/>
                 {children}
                 <Footer/>

@@ -1,8 +1,8 @@
 .outerDiv {
   position: relative;
-  top: 25vh;
+  top: 28vh;
   margin: 0;
-  padding: 0 100px;
+  padding: 0 5%;
 }
 
 .header-section {
@@ -76,13 +76,16 @@
 }
 
 .left-section {
+
   width: 19%;
   background-color: #ffffff;
   display: none;
 }
 
 .left-section.show {
+  margin-top: 2%;
   display: block;
+  border-radius: 5px;
  
 }
 
@@ -100,6 +103,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  
+ 
 }
 
 .product-section {
@@ -107,6 +112,12 @@
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
   gap: 20px;
+}
+#minFilter{
+  display: none;
+}
+#midLine{
+  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -130,6 +141,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+   
   }
   .container {
     width: 100%;
@@ -163,6 +175,7 @@
   .filter-section {
     width: 90%;
     padding: 5px;
+   
   }
   .right-section {
     padding: 0%;
@@ -176,6 +189,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    
   }
 
   .container {
@@ -183,13 +197,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   .outerDiv {
     margin: 0;
     padding: 0;
   }
   .filter-section {
-   
+    
     width: 90%;
     padding: 5px;
   }
@@ -200,6 +215,15 @@
 
 .left-section.show {
   display: flex;
+  padding-right: 2.5rem;
+  
+}
+@media screen and (min-width:769px) {
+  .left-section.show {
+    display: flex;
+    padding-right: 0rem;
+    
+  }
 }
 
 @media (min-width: 320px) and (max-width: 426px) {
@@ -224,13 +248,43 @@
     margin-top: 10px;
     
   }
+  .left-section.show {
+    display: flex;
+    padding-right: 0rem;
+    
+  }
+  #maxFilter{
+    display: none;
+  }
+  .hide-filter-text svg{
+    display: none;
+  }
+  #minFilter{
+    display: block;
+    margin-left: 2.5rem;
+    color: black;
+    text-decoration: underline 2px solid #E5E5E5 ;
+  }
+  #midLine{
+    display: inline-block;
+  
+
+  }
+  #recommended{
+    position: absolute;
+    left: 60%;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    width: 200px;
+    display: none;
+    
+  }
+  #recommended ul{
+    position: relative;
+    
+  }
   
 }
 
-@media (min-width: 427px) and (max-width: 426px){
-  .container {
-    display: flex;
-    width: 200px;
-    
-  }
-}
+

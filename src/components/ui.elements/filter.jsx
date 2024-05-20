@@ -47,15 +47,15 @@ const Filter = ({ filter }) => {
           )}
         </h3>
       </div>
-      <h4>All</h4>
+      <h4 style={{fontSize:"15px"}}>All</h4>
       {openSemi && (
         <>
-          <p>Unselect all</p>
+          <p style={{fontSize:"13px"}}>Unselect all</p>
 
           {filter?.options?.map((option) => (
             <div className="checkbox-container" key={filter?.option?.value}>
               <input type="checkbox" id={filter?.option?.value} />
-              <label htmlFor={filter?.option?.value}>{option}</label>
+              <label style={{fontSize:"11px",color:"#252020"}} htmlFor={filter?.option?.value}>{option}</label>
             </div>
           ))}
         </>

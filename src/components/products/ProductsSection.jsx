@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import './style.css';
+import "./style.css";
 import ProductCard from "../ui.elements/ProductCard";
 import Filter from "../ui.elements/filter";
 import { Recommended, filters } from "@/constants/constants";
-import Spinner from "../ui.elements/Spinner";
+
 
 const ProductsSection = () => {
   const [showFilter, setShowFilter] = useState(false);
@@ -26,7 +26,6 @@ const ProductsSection = () => {
     const handleResize = () => {
       let newGrid = "repeat(4, 1fr)";
       if (window.innerWidth < 768) {
-        
         setItemCount("none");
         newGrid = "repeat(2, 1fr)";
       } else if (window.innerWidth < 1024) {
@@ -36,7 +35,6 @@ const ProductsSection = () => {
         setItemCount("block");
       }
 
-      // Adjust grid based on showFilter state
       if (showFilter) {
         if (window.innerWidth < 768) {
           newGrid = "repeat(2, 1fr)";
@@ -79,7 +77,8 @@ const ProductsSection = () => {
       <div className="header-section">
         <div className="header-inner-div">
           <p style={{ display: `${itemCount}` }}>3425 Items</p>
-          <p className="hide-filter-text" onClick={toggleFilter}>
+          <p className="hide-filter-text" onClick={toggleFilter}> 
+          <span id="minFilter" >FILTER</span>
             <span>
               <svg
                 width="16"
@@ -97,12 +96,14 @@ const ProductsSection = () => {
                 />
               </svg>
             </span>
-            {showFilter ? "HIDE FILTER" : "SHOW FILTER"}
+            <span id="maxFilter">{showFilter ? "HIDE FILTER" : "SHOW FILTER"}</span>
           </p>
+         
         </div>
+       
         <div>
           <div className="recomended_div">
-            <p onClick={handleRecommend}>
+            <p onClick={handleRecommend} >
               RECOMMENDED{" "}
               <span>
                 <svg
@@ -124,11 +125,14 @@ const ProductsSection = () => {
             </p>
           </div>
           {showRecommend ? (
-            <div className="recommended">
+            <div className="recommended" id="recommended">
               <ul>
                 {Recommended.map((link, index) => (
                   <li
-                    style={{ fontWeight: index === 0 ? "bold" : "normal",margin:"0.5rem" }}
+                    style={{
+                      fontWeight: index === 0 ? "bold" : "normal",
+                      margin: "0.5rem",
+                    }}
                     key={index}
                   >
                     {link.title}
@@ -156,22 +160,20 @@ const ProductsSection = () => {
           )}
         </div>
         <div
-        id="veeresh"
-          className={`right-section ${showFilter ? "show-filter" : ""}`}
+          id="veeresh"
+          className={`right-section ${
+            showFilter ? "show-filter" : "hide filter"
+          }`}
           style={{ width: showFilter ? "80%" : "100%" }}
         >
           {products ? (
-            <div style={productSectionStyle} >
+            <div style={productSectionStyle}>
               {products?.map((prd, index) => (
                 <ProductCard key={index} product={prd} />
               ))}
             </div>
           ) : (
-            <div style={productSectionStyle}>
-              {[1, 2, 3, 4].map((_, index) => (
-                <Spinner key={index} />
-              ))}
-            </div>
+           ""
           )}
         </div>
       </div>
