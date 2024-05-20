@@ -94,8 +94,8 @@ nav ul li:hover{
   .menu {
     display: block;
     margin-right: 0.2rem;
-    /* position: absolute;
-    top: -7vh; */
+    position: relative;
+    bottom: 31px;
     left: 0.5rem;
 
   }
